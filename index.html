@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vtvlive.Login</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="content px-4">
+            <input type="button" id="btnLogin" value="Đăng nhập" />
+            <input type="button" id="btnLogOut" value="Thoát" />
+        </div>
+        <div>
+            <input type="button" id="btnGetUserInfo" value="Get UserInfo" />
+            <input type="button" id="btnVerifyToken" value="Verify Token" />
+            <input type="button" id="btnRefreshToken" value="Refresh Token" />
+        </div>
+
+        <div>
+            <label id="result"></label>
+        </div>
+    </div>
+    <script src="lib/moment.js"></script>
+    <script src="lib/CryptoService.js"></script>
+    <script src="lib/Platform.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/appsettings.js" ></script>
+    <script src="js/ComLibs.js" ></script>
+    <script id="iframe-sso-id" src="js/goSSOClient.js" ></script>
+    <script src="js/ClientOauthApp.js" ></script>
+    <script src="js/site.js" ></script>
+    <script>
+        ComLibs.Init();
+    </script>
+</body>
+</html>
